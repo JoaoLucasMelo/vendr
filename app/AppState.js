@@ -13,7 +13,7 @@ snacks = [
 drinks = [
   new Drinks('Coke', 'Soda', 1.75, 22),
   new Drinks('OJ', 'Juice', 2.00, 15),
-  new Drinks('Fanta', 'Soda', 1.50, 10)
+  new Drinks('Fanta', 'Soda', 1.50, 1)
 
 ]
 
