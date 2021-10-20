@@ -26,9 +26,63 @@
   </header>
   <main>
     <div class="container-fluid">
-
-      <button onclick="app.vendingController.buyDoritos()" class="btn btn-dark mt-3">Buy Doritos</button>
-    </div>
+      <div class="row">
+        <h2 class=" m-3">SNACKS!</h2>
+        <div class="col-3 text-center">
+          <div>
+            <button onclick="app.vendingController.showDoritos()" class="btn btn-dark mt-3">Doritos Info</button>
+            <h5 id="listDoritos" class="mt-2"></h5>
+          </div>
+          <button onclick="app.vendingController.buyDoritos()" class="btn btn-dark mt-3">Buy Doritos</button>
+        </div>
+        <div class="col-3 text-center">
+          <div>
+            <button onclick="app.vendingController.showCookies()" class="btn btn-dark mt-3">GrandMa Cookies
+              Info</button>
+            <h5 id="listCookies" class="mt-2"></h5>
+          </div>
+          <button onclick="app.vendingController.buyCookies()" class="btn btn-dark mt-3">Buy GrandMa Cookies</button>
+        </div>
+        <div class="col-3 text-center">
+          <div>
+            <button onclick="app.vendingController.showChocolate()" class="btn btn-dark mt-3">Peanuts M&Ms Info</button>
+            <h5 id="listChocolate" class="mt-2"></h5>
+          </div>
+          <button onclick="app.vendingController.buyChocolate()" class="btn btn-dark mt-3">Buy Peanuts M&Ms</button>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class=" m-3">DRINKS!</h2>
+        <div class="col-3 text-center">
+          <div>
+            <button onclick="app.vendingController.showCoke()" class="btn btn-dark mt-3">Coke Info</button>
+            <h5 id="listCoke" class="mt-2"></h5>
+          </div>
+          <button onclick="app.vendingController.buyCoke()" class="btn btn-dark mt-3">Buy Coke</button>
+        </div>
+        <div class="col-3 text-center">
+          <div>
+            <button onclick="app.vendingController.showOJ()" class="btn btn-dark mt-3">Orange Juice
+              Info</button>
+            <h5 id="listOJ" class="mt-2"></h5>
+          </div>
+          <button onclick="app.vendingController.buyOJ()" class="btn btn-dark mt-3">Buy Orange Juice</button>
+        </div>
+        <div class="col-3 text-center">
+          <div>
+            <button onclick="app.vendingController.showFanta()" class="btn btn-dark mt-3">Fanta Info</button>
+            <h5 id="listFanta" class="mt-2"></h5>
+          </div>
+          <button onclick="app.vendingController.buyFanta()" class="btn btn-dark mt-3">Buy Fanta</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 text-center">
+          <h3 class="mt-5">Your Funds</h3>
+          <h3 id="funds" class="mt-1">$0</h3>
+          <button onclick="app.vendingController.addQuarters()" class="btn btn-dark mt-3">Add Quarters</button>
+        </div>
+      </div>
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
